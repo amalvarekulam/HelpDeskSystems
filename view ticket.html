@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>View Ticket </title>
+  <!-- plugins:css -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/vendors/mdi/css/materialdesignicons.min.css">
+  <link rel="stylesheet" href="assets/vendors/css/vendor.bundle.base.css">
+  <!-- endinject -->
+  <!-- Layout styles -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <!-- End layout styles -->
+  <link rel="shortcut icon" href="assets/images/favicon.ico" />
+</head>
+
+<body>
+  <div class="container-scroller">
+    <!-- partial:partials/_navbar.html -->
+    <nav class="navbar default-layout-navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
+      <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
+        <a class="navbar-brand brand-logo" href="#"><img src="assets/images/logo.png" alt="logo" /></a>
+        <a class="navbar-brand brand-logo-mini" href="#"><img src="assets/images/logo-mini.svg" alt="logo" /></a>
+      </div>
+      <div class="navbar-menu-wrapper d-flex align-items-stretch">
+        <!-- <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
+          <span class="mdi mdi-menu"></span>
+        </button> -->
+        <div class="search-field d-none d-md-block ">
+          <form class="d-flex align-items-center h-100 " action="#">
+            <div class="input-group bg-light">
+              <div class="input-group-prepend bg-transparent">
+                <i class="input-group-text border-0 mdi mdi-magnify"></i>
+              </div>
+              <input type="text" class="form-control bg-transparent border-0" placeholder="Search ">
+            </div>
+          </form>
+        </div>
+        <ul class="navbar-nav navbar-nav-right hide-class ">
+          <li class="nav-item dropdown">
+            <a class="nav-link count-indicator dropdown-toggle" id="notificationDropdown" href="#"
+              data-toggle="dropdown">
+              <i class="mdi mdi-bell-outline"></i>
+              <span class="count-symbol bg-violet"></span>
+            </a>
+
+          </li>
+          <li class="nav-item nav-profile dropdown">
+            <a class="nav-link dropdown-toggle" id="profileDropdown" href="#" data-toggle="dropdown"
+              aria-expanded="false">
+              <div class="nav-profile-img">
+                <img src="assets/images/faces/face1.png" alt="image">
+              </div>
+
+            </a>
+
+          </li>
+
+
+
+        </ul>
+        <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button"
+          data-toggle="offcanvas" id="click_advance">
+          <span class="mdi mdi-menu"></span>
+        </button>
+        <button class="navbar-back-btn d-lg-none align-self-center" type="button">
+          <span class="mdi mdi-chevron-left "></span>
+        </button>
+      </div>
+    </nav>
+    <!-- partial -->
+    <div class="container-fluid page-body-wrapper">
+      <!-- partial:partials/_sidebar.html -->
+      <nav class="sidebar sidebar-offcanvas" id="sidebar">
+        <ul class="nav">
+
+          <li class="nav-item ">
+            <a class="nav-link" href="index-2.html">
+              <span class="menu-title">Dashboard</span>
+              <i class="mdi mdi-home menu-icon"></i>
+            </a>
+          </li>
+          <li class=" nav-title hide-icon-only mt-2">
+            <span class="">TICKETS</span>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
+              <span class="menu-title">Tickets All</span>
+              <i class="mdi mdi-ticket-confirmation mdi-rotate-135 menu-icon"></i>
+            </a>
+
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../icons/mdi.html">
+              <span class="menu-title">Tickets New</span>
+              <i class="mdi mdi-ticket-confirmation mdi-rotate-135 menu-icon"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../forms/basic_elements.html">
+              <span class="menu-title">Tickets in Progress</span>
+              <i class="mdi mdi-ticket-confirmation mdi-rotate-135 menu-icon"></i>
+            </a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="../charts/chartjs.html">
+              <span class="menu-title">Tickets Resolved</span>
+              <i class="mdi mdi-ticket-confirmation mdi-rotate-135 menu-icon"></i>
+            </a>
+          </li>
+          <div class="borderline"></div>
+          <li class=" nav-title hide-icon-only ">
+            <span class="">ACCOUNT MANAGEMENT</span>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="account-settings.html">
+              <span class="menu-title">Account Settings</span>
+              <i class="mdi mdi-account-check menu-icon"></i>
+            </a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="#">
+              <span class="menu-title">Change Password</span>
+              <i class="mdi mdi-lock-outline menu-icon"></i>
+            </a>
+          </li>
+
+        </ul>
+      </nav>
+      <!-- partial -->
+      <div class="main-panel">
+        <div class="content-wrapper">
+          <div class="row">
+            <div class="col-lg-10 col-10">
+              <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="#" class="text-dark">Tickets</a></li>
+                  <li class="breadcrumb-item"><a href="#" class="text-dark">My Tickets</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">View </li>
+                </ol>
+              </nav>
+            </div>
+            <div class="col-lg-2 text-end col-2 d-none d-sm-block">
+              <button class="btn btn-primary ps-2 pe-2 ps-lg-3 pe-lg-3"> <i
+                  class="mdi mdi-arrow-left pe-1 "></i>BACK</button>
+            </div>
+          </div>
+          <div>
+            <div class="card-account">
+              <div class="card-header">
+                VIEW
+              </div>
+              <div class="card-body">
+                <div class="row mb-3">
+                  <div class="col-lg-6 col-md-4 mb-3">
+                    <div class="btn-group" role="group" aria-label="Basic example">
+                      <button type="button" class="btn btn-dark-blue">ALL STATUSES</button>
+                      <button type="button" class="btn btn-white border">ALL PRIORITIES</button>
+
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-8 ps-md-0">
+                    <div class="d-flex justify-content-end  flex-sm-row flex-column">
+                      <form class="searching me-lg-2 me-md-2">
+                        <input type="text" placeholder="Search" name="search">
+                        <button type="submit"><i class="mdi mdi-magnify"></i></button>
+                      </form>
+                      <!-- <button class="btn btn-success ps-4 pe-4 mt-3 mt-md-0 mt-lg-0">CREATE TICKET</button> -->
+                    </div>
+
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-12">
+                    <div class="mb-3">
+                      <textarea class="form-control" id="exampleFormControlTextarea1" rows="4"
+                        placeholder="Praesent lorem orci, laoreet vel pretium in, efficitur eget ex. Mauris venenatis, neque et suscipit tempor, diam turpis porttitor lacus, vitae gravida orci mauris vel dui. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed pharetra elit id elementum placerat. Quisque eget efficitur risus. Cras finibus eros ante, a faucibus nibh porttitor vitae. Cras id ipsum faucibus arcu ornare iaculis sed eget lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus non odio bibendum, congue enim rhoncus, lobortis neque."></textarea>
+
+                    </div>
+                  </div>
+
+                </div>
+                <div class="row">
+                  <div class="col-lg-12">
+                    <div class="mb-3">
+                      <label for="exampleFormControlInput1" class="form-label">There are no comments</label>
+                      <h6 class="fw-bold mt-3">LEAVE A COMMENT</h6>
+                      <textarea class="form-control" id="exampleFormControlTextarea1" rows="4"></textarea>
+                    </div>
+                  </div>
+                </div>
+                <div class="text-center">
+                  <a href="#" class="btn btn-primary"> <i class="mdi mdi-telegram pe-1"></i>SUBMIT</a>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <!-- content-wrapper ends -->
+        <!-- partial:partials/_footer.html -->
+        <footer class="footer">
+          <div class="container-fluid clearfix">
+
+            <span class=" d-block mt-1 mt-sm-0 text-center"> Copyright © 2022 help desk system
+              .com, All Rights Reserved.</span>
+          </div>
+        </footer>
+        <!-- partial -->
+      </div>
+      <!-- main-panel ends -->
+    </div>
+    <!-- page-body-wrapper ends -->
+  </div>
+  <!-- container-scroller -->
+  <!-- plugins:js -->
+  <script src="assets/vendors/js/vendor.bundle.base.js"></script>
+  <!-- endinject -->
+  <script src="assets/js/off-canvas.js"></script>
+  <script src="assets/js/hoverable-collapse.js"></script>
+  <script src="assets/js/misc.js"></script>
+  <!-- Custom js for this page -->
+  <script src="assets/js/custom.js"></script>
+</body>
+
+
+</html>

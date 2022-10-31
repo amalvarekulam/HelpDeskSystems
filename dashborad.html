@@ -142,24 +142,24 @@
       <div class="main-panel">
         <div class="content-wrapper">
           <div class="row mb-2">
-            <div class="col-lg-6 col-md-12 col-12 mb-3">
-              <div class="btn-group" role="group" aria-label="Basic example">
-                <button type="button" class="btn btn-dark-blue">ALL STATUSES</button>
-                <button type="button" class="btn btn-white border">ALL PRIORITIES</button>
+            <div class="col-lg-2 col-md-12 col-12 ">
+              <div class="btn-group w-100" role="group" aria-label="Basic example">
+                <button type="button" class="btn btn-dark-blue">MONTHLY</button>
+                <button type="button" class="btn btn-light ">WEEKLY</button>
 
               </div>
             </div>
 
           </div>
           <div class="row mb-3">
-            <div class="col-lg-3  pt-2 pb-2 pe-lg-4 pe-3 ps-3">
+            <div class="col-lg-3  pt-2 pb-2 pe-lg-2 pe-3 ps-3">
               <div class="card-dashboard-blue">
                 <div class="card-body">
                   <div class="row">
                     <div class="col-lg-7 col-7">
                       <h6>NEW <br> TICKET</h6>
                     </div>
-                    <div class="col-lg-5 col-5">
+                    <div class="col-lg-5 col-5 text-end">
                       <h1>34</h1>
                     </div>
                   </div>
@@ -173,7 +173,7 @@
                     <div class="col-lg-7 col-7">
                       <h6>IN PROGRESS TICKET</h6>
                     </div>
-                    <div class="col-lg-5 col-5">
+                    <div class="col-lg-5 col-5 text-end">
                       <h1>20</h1>
                     </div>
                   </div>
@@ -187,7 +187,7 @@
                     <div class="col-lg-7 col-7">
                       <h6>RESOLVED TICKETS</h6>
                     </div>
-                    <div class="col-lg-5 col-5">
+                    <div class="col-lg-5 col-5 text-end">
                       <h1>152</h1>
                     </div>
                   </div>
@@ -201,7 +201,7 @@
                     <div class="col-lg-7 col-7">
                       <h6>TOTAL TICKETS</h6>
                     </div>
-                    <div class="col-lg-5 col-5">
+                    <div class="col-lg-5 col-5 text-end">
                       <h1>260</h1>
                     </div>
                   </div>
@@ -211,62 +211,68 @@
           </div>
           <div class="row mb-3">
             <div class="col-lg-6 mb-3 pe-lg-2 pe-3 ps-3">
-              <div class="card-chart">
+              <div class="card-chart-6">
                 <div class="card-body">
-                  <h5 class="fw-bold ms-1 mt-2">TICKETS MONTHLY TRENDS</h5>
+                  <h5 class="fw-bold ms-1 mt-1">TICKETS MONTHLY TRENDS</h5>
                   <div id="chart-candlestick"></div>
                 </div>
               </div>
             </div>
-            <div class="col-lg-6 mb-3 pe-lg-4 pe-3 ps-3">
-              <div class="card-chart">
+            <div class="col-lg-3 mb-3 pe-lg-2 pe-3 ps-3">
+              <div class="card-chart-6">
                 <div class="card-body">
-                  <h5 class="fw-bold ms-1 mt-2">BY TICKET STATUS </h5>
+                  <h5 class="fw-bold ms-1 mt-1">BY TICKET STATUS </h5>
                   <div id="chart-pie"></div>
                 </div>
               </div>
 
             </div>
-            <div class="col-lg-6 mb-3 pe-lg-2 pe-3 ps-3">
-              <div class="card-chart">
-                <div class="card-body">
-                  <h5 class="fw-bold ms-1 mt-2 mb-4">BY ISSUE CATEGORY </h5>
-                  <div id="barchart">
-                    <div class="progress mb-3">
-                      <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="100"
-                        aria-valuemin="0" aria-valuemax="100">Access/Login</div>
-                      <span class="pt-2 mt-2 ps-3">3453</span>
-                    </div>
-                    <div class="progress mb-3">
-                      <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75"
-                        aria-valuemin="0" aria-valuemax="100">Systems</div>
-                      <span class="pt-2 mt-2 ps-3">2598</span>
-                    </div>
-                    <div class="progress mb-3">
-                      <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50"
-                        aria-valuemin="0" aria-valuemax="100">Hardware</div>
-                      <span class="pt-2 mt-2 ps-3">2590</span>
-                    </div>
-                    <div class="progress mb-3">
-                      <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25"
-                        aria-valuemin="0" aria-valuemax="100">Software</div>
-                      <span class="pt-2 mt-2 ps-3">901</span>
-                    </div>
+            <div class="col-lg-3">
+              <div class="row">
 
+                <div class="col-lg-12 mb-2 pe-lg-4 pe-3 ps-3">
+                  <div class="card-chart">
+                    <div class="card-body">
+                      <h5 class="fw-bold ms-1 mt-1 mb-3">BY ISSUE CATEGORY </h5>
+                      <div id="barchart">
+                        <div class="progress mb-2">
+                          <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="100"
+                            aria-valuemin="0" aria-valuemax="100">Access/Login</div>
+                          <span class="pt-2 mt-1 ps-3">3453</span>
+                        </div>
+                        <div class="progress mb-2">
+                          <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75"
+                            aria-valuemin="0" aria-valuemax="100">Systems</div>
+                          <span class="pt-2 mt-1 ps-3">2598</span>
+                        </div>
+                        <div class="progress mb-2">
+                          <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50"
+                            aria-valuemin="0" aria-valuemax="100">Hardware</div>
+                          <span class="pt-2 mt-1 ps-3">2590</span>
+                        </div>
+                        <div class="progress mb-2">
+                          <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25"
+                            aria-valuemin="0" aria-valuemax="100">Software</div>
+                          <span class="pt-2 mt-1 ps-3">901</span>
+                        </div>
+
+                      </div>
+                    </div>
                   </div>
+
+                </div>
+                <div class="col-lg-12 mb-3 pe-lg-4 pe-3 ps-3">
+                  <div class="card-chart">
+                    <div class="card-body">
+                      <h5 class="fw-bold ms-1 mt-1 mb-2">AVERAGE SOLVE TIME </h5>
+                      <canvas id="lineChart" width="400" height="200"></canvas>
+                    </div>
+                  </div>
+
                 </div>
               </div>
-
             </div>
-            <div class="col-lg-6 mb-3 pe-lg-4 pe-3 ps-3">
-              <div class="card-chart">
-                <div class="card-body">
-                  <h5 class="fw-bold ms-1 mt-2 mb-4">AVERAGE SOLVE TIME </h5>
-                  <canvas id="lineChart" width="400" height="200"></canvas>
-                </div>
-              </div>
 
-            </div>
 
           </div>
         </div>

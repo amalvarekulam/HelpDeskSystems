@@ -217,19 +217,6 @@ am5.ready(function() {
     strokeWidth: 1,
     stroke: am5.color(0xffffff)
   });
-  // series.slices.template.set("fillGradient", am5.RadialGradient.new(root, {
-  //   stops: [{
-  //     brighten: -0.8
-  //   }, {
-  //     brighten: -0.8
-  //   }, {
-  //     brighten: -0.5
-  //   }, {
-  //     brighten: 0
-  //   }, {
-  //     brighten: -0.5
-  //   }]
-  // }));
   series.get("colors").set("colors", [
     am5.color("#975DFE"),
     am5.color("#2987DE"),
@@ -274,17 +261,24 @@ am5.ready(function() {
    
   }, ]);
   
-  
+  series.labels.template.setAll({
+    fontSize: 12,
+    text: "{value}",
+    textType: "adjusted",
+    radius: 0
+  })
+
   // Create legend
   // https://www.amcharts.com/docs/v5/charts/percent-charts/legend-percent-series/
   var legend = chart.children.push(am5.Legend.new(root, {
     centerX: am5.p50,
     x: am5.p50,
-    marginTop: 40,
-    marginBottom: 40
+    // marginTop: 40,
+    // marginBottom: 40
   }));
   
   legend.data.setAll(series.dataItems);
+  legend.valueLabels.template.disabled = true;
   
   
   // Play initial series animation

@@ -3374,7 +3374,7 @@ fieldset:disabled a.btn {
 
 .btn-light {
   color: #212529;
-  background-color: #f8f9fa;
+  background-color: #fff;
   border-color: #f8f9fa;
 }
 
@@ -13670,7 +13670,7 @@ code {
 /* Bootstrap Progress */
 .progress {
   border-radius: 0px;
-  height: 35px;
+  height: 20px;
 }
 
 .progress .progress-bar {
@@ -17565,6 +17565,17 @@ dl li {
   padding: 1rem;
 }
 
+.card-chart-6 {
+  background-color: #fff;
+  box-shadow: 0px 3px 10px #0000000F;
+  border-radius: 6px;
+  max-height: 380px;
+}
+
+.card-chart-6 .card-body {
+  padding: 1rem;
+}
+
 .card-chart {
   background-color: #fff;
   box-shadow: 0px 3px 10px #0000000F;
@@ -17654,6 +17665,7 @@ form.searching::after {
 
 .navbar-back-btn .mdi-chevron-left:before {
   font-size: 40px;
+  color: #000;
 }
 
 .navbar-toggler:focus {
@@ -17696,11 +17708,43 @@ form.searching::after {
 }
 
 #barchart {
-  min-height: 200px;
+  max-height: 150px;
 }
-#lineChart{
+
+#lineChart {
   max-height: 200px;
 }
+
+@media screen and (min-width:2000px) {
+  .card-chart-6 {
+    min-height: 440px !important;
+  }
+}
+
+@media screen and (min-width:1800px) and (max-width:1999px) {
+  .card-chart-6 {
+    min-height: 410px !important;
+  }
+}
+
+@media screen and (min-width:1700px) and (max-width:1799px) {
+  .card-chart-6 {
+    min-height: 395px !important;
+  }
+}
+
+@media screen and (min-width:1400px) and (max-width:1599px) {
+  .card-chart-6 {
+    min-height: 375px !important;
+  }
+}
+
+@media screen and (min-width:991px) and (max-width:1399px) {
+  .card-chart-6 {
+    max-height: 355px !important;
+  }
+}
+
 @media screen and (min-width:992px) {
 
   .searching {

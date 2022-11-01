@@ -16739,7 +16739,7 @@ dl li {
 @media (max-width: 480px) {
   .navbar .navbar-brand-wrapper {
     width: auto;
-    margin-left: 44px;
+    margin-left: 60px;
   }
 
   .navbar .navbar-brand-wrapper .brand-logo-mini {
@@ -17793,7 +17793,7 @@ form.searching::after {
   }
 }
 
-@media screen and (max-width:375px) {
+@media screen and (max-width:425px) {
 
   .navbar-back-btn {
     position: absolute;
@@ -17818,6 +17818,12 @@ form.searching::after {
 
   .textbox-width {
     width: 50px;
+    height: 36px;
+  }
+}
+@media screen and (max-width:350px) {
+  .textbox-width {
+    width: 35px;
     height: 36px;
   }
 }

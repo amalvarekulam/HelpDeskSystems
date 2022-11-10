@@ -15705,7 +15705,7 @@ code {
 
 .dropdown .dropdown-menu .dropdown-item:hover {
   background-color: #f8f9fa;
-  color: #ffffff;
+  color: #000;
 }
 
 /* Forms */
@@ -16579,6 +16579,7 @@ dl li {
   font-size: 0.9rem;
   margin-top: 0;
   padding: 0;
+  left: -82px;
 }
 
 .rtl .navbar .navbar-menu-wrapper .navbar-nav .nav-item.dropdown .dropdown-menu.navbar-dropdown {
@@ -17712,6 +17713,26 @@ form.searching::after {
   max-height: 200px;
 }
 
+.ticket_name_wrapper a {
+  width: auto;
+  position: relative;
+}
+
+.counter_count {
+  position: absolute;
+  right: -30px;
+  top: -9px;
+  font-size: 9px;
+  width: 25px;
+  height: 25px;
+  text-align: center;
+  background-image: url(../images/chat.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 25px;
+  line-height: 25px;
+}
+
 @media screen and (min-width:2000px) {
   .card-chart-6 {
     min-height: 440px !important;
@@ -17818,6 +17839,7 @@ form.searching::after {
     height: 36px;
   }
 }
+
 @media screen and (max-width:350px) {
   .textbox-width {
     width: 35px;
